@@ -1,0 +1,189 @@
+/* AboutUs.css */
+
+.about-us {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .container-about {
+    display:flex;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .container-about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .container-about p {
+    font-size: 1.2em;
+    line-height: 1.6;
+  }
+  .option {
+    color:black;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  .options-container {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+  }
+  
+  .option:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .content-container {
+    width:auto;
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 20px;
+  }
+  
+  .content-container h2 {
+    color: #007bff;
+  }
+  
+  .content-container p {
+    line-height: 1.6;
+  }
+  .about-us {
+    background: linear-gradient(135deg, #b3ccb0 0%, #947272 100%);
+    background-size:100%;
+    position:fixed;
+    overflow: hidden;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  li {
+      list-style-type: none;
+  }
+  
+  
+  #range {
+    margin-top: 5px;
+    color: transparent;
+    font-size: 10pt;
+    margin-left: 10px;
+    position: relative;
+  }
+  
+  #specks {
+    position: absolute;
+    z-index: 999;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .speck {
+    opacity: 0;
+    height: 4px;
+    width: 4px;
+    background: url('http://i1272.photobucket.com/albums/y391/matthew_williams10/speck_zpsu9xym9zl.png');
+    background-size: cover;
+    position: absolute;
+    border-radius: 10px;
+    z-index: 99;
+  }
+  
+  .img-about {
+    position: absolute;
+    height: 100000px;
+    width: 100000px;
+    top: -8500px;
+    left: -8000px;
+    animation-timing-function: cubic-bezier(0.250, 0.250, 0.750, 0.750);
+    animation-name: float;
+    animation-iteration-count: infinite;
+  }
+  
+  #img-1 {
+    opacity: 0.25;
+    background: url('https://image.ibb.co/jcTvpv/dust1.jpg');
+    background-repeat: repeat;
+    animation-duration: 600s;
+  }
+  
+  #img-2 {
+    opacity: 0.2;
+    background: url('https://image.ibb.co/goU1Uv/dust2.jpg');
+    background-repeat: repeat;
+    animation-duration: 450s;
+  }
+  
+  #img-3 {
+    opacity: 0.15;
+    background: url('https://image.ibb.co/cymRwa/dust3.jpg');
+    background-repeat: repeat;
+    animation-duration: 350s;
+  }
+  /*ANIMATIONS*/
+  
+  @keyframes twinkle {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    30% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.75;
+    }
+    70% {
+      opacity: 0;
+    }
+    100% {
+      transform: translate(175px, 100px);
+    }
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    100% {
+        transform:translate(8000px, 4000px);
+    }
+  }
+  .bounce-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    margin-bottom:400px;
+  }
+  .abt-p{
+    margin-left:10px;
+  }
+  .abt-h{
+    margin-right:10px;
+  font-size:50px;
+  line-height: 1.6;
+  
+  }
+  
+  
