@@ -70,7 +70,7 @@ app.post('/login',async(req,res)=>{
             const token = jwt.sign({  email: currentUser.email, role: currentUser.role }, 'key', { expiresIn: '1hr' });
         
             // Send the JWT token to the frontend
-            res.json({ token,role});
+            res.json({ token,role,msg:"Succes is not true"});
           } else {
             res.status(401).json({ message: 'Invalid credentials' });
           }
